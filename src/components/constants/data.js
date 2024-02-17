@@ -54,7 +54,7 @@ export const events = [
 		title: "Git Cryptex",
 		description: [
 			`
-			An event aimed to test participants' knowledge on
+			An event aimed to test participants knowledge on
 			open-source technologies such as Git and GitHub. The
 			event comprises two stages. First, all the teams
 			will be required to solve a crossword puzzle based
@@ -66,8 +66,8 @@ export const events = [
 		],
 		date:'26th February 2024',
 		participation: "Team Event (Team Size: 2)",
-		link: "",
-		status: "Coming Soon",
+		link: "https://forms.gle/EVe4G7T4c5TVQjEG7",
+		status: "Register",
 	},
 	{
 		id: "event-2",

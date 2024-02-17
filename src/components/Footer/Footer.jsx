@@ -35,13 +35,13 @@ const Footer = () => {
 											href="https://cbitosc.github.io"
 										>
 											{" "}
-											Our Website
+											COSC Official Website
 										</a>
 										<a
 											className="m-1 text-blue-400 linko"
 											href="https://cbitosc.github.io/hacktoberfest22/"
 										>
-											HactoberFest'23
+											HacktoberFest'23
 										</a>
 										<a
 											className="m-1 text-blue-400 linko"
