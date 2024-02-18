@@ -92,8 +92,8 @@ export const events = [
 		],
 		date:'27th February 2024',
 		participation: "Team Event (Team Size: 2)",
-		link: "",
-		status: "Coming Soon",
+		link: "https://forms.gle/h5WH1MS33DoSCfFcA",
+		status: "Register",
 	}
 ];
 
