@@ -79,8 +79,8 @@ export const events = [
 		],
 		date:'26th February 2024 to 27th February 2024',
 		participation: "Individual Event",
-		link: "",
-		status: "Coming Soon",
+		link: "https://forms.gle/wKEbWmapbtGbTQi86",
+		status: "Register",
 	},
 	{
 		id: "event-3",
