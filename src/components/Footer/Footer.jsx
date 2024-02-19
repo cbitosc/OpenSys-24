@@ -39,7 +39,7 @@ const Footer = () => {
 										</a>
 										<a
 											className="m-1 text-blue-400 linko"
-											href="https://cbitosc.github.io/hacktoberfest22/"
+											href="https://cbit-hacktoberfest23.vercel.app/"
 										>
 											HacktoberFest'23
 										</a>
