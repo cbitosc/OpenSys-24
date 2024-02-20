@@ -173,11 +173,56 @@ const Home = () => {
                 <h1 className=" h1contactmobile mb-0 glowing-underline h1events">
                     Events
                 </h1>
+
                 <motion.div
                     className="neomorphism"
                     ref={refNeo1}
                     variants={sectionVariant}
                     animate={inViewNeo1 ? "visible" : "hidden"}
+                >
+                    <div id="gitimage">
+                        <img src={decipher} alt="" />
+                    </div>
+                    <div id="gitimagedesktop">
+                        <img
+                            className="github"
+                            style={{ height: "auto" }}
+                            src={decipher}
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        style={{ lineHeight: "24px" }}
+                        className="text-3xl m-6"
+                    >
+                        <h1 className="font-semibold pb-4">{event3.title}</h1>
+                        <p>{event3.description}</p>
+                        <div className="display-flex icon-text py-2">
+                            <i className="ri-user-3-fill"></i>
+                            <p>Participation: {event3.participation}</p>
+                        </div>
+                        <div className="display-flex icon-text">
+                            <i className="ri-calendar-todo-fill"></i>
+                            <p>Date: {event3.date}</p>
+                        </div>
+
+                        <motion.button
+                            id="event2register"
+                            className="buy__button mt-40 mb-40 "
+                        >
+                            <a href={`${event3.link}`} className="text-[16px]">
+                                {event3.status}
+                            </a>
+                        </motion.button>
+                    </div>
+                </motion.div>
+
+
+                <motion.div
+                    className="neomorphism"
+                    ref={refNeo2}
+                    variants={sectionVariant}
+                    animate={inViewNeo2 ? "visible" : "hidden"}
                 >
                     <div className="text-white" style={{ width: "100%" }}>
                         <div id="gitimagedesktop">
@@ -224,7 +269,7 @@ const Home = () => {
                     </div>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                     className="neomorphism"
                     ref={refNeo2}
                     variants={sectionVariant}
@@ -265,7 +310,7 @@ const Home = () => {
                             </a>
                         </motion.button>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     className="neomorphism"
