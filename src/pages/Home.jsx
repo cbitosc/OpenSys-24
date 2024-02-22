@@ -180,6 +180,56 @@ const Home = () => {
                     variants={sectionVariant}
                     animate={inViewNeo1 ? "visible" : "hidden"}
                 >
+                    <div className="text-white" style={{ width: "100%" }}>
+                        <div id="gitimagedesktop">
+                            <img
+                                className="github"
+                                style={{ height: "auto" }}
+                                src={odessey}
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            className="text-3xl m-6 "
+                            style={{ lineHeight: "24px" }}
+                        >
+                            <h1 className="font-semibold pb-4">
+                                {event2.title}
+                            </h1>
+                            <p>{event2.description}</p>
+                            <div className="display-flex icon-text">
+                                <i className="ri-team-fill"></i>
+                                <p>Participation: {event2.participation}</p>
+                            </div>
+                            <div className="display-flex icon-text">
+                                <i className="ri-calendar-todo-fill"></i>
+                                <p>Date: {event2.date}</p>
+                            </div>
+                            <motion.button
+                                id="event1register"
+                                className="buy__button mt-40"
+                            >
+                                <a
+                                    href={`${event2.link}`}
+                                    style={{ lineHeight: "24px" }}
+                                    className="text-[16px]"
+                                >
+                                    {event2.status}
+                                </a>
+                            </motion.button>
+                        </div>
+                    </div>
+                    <div id="gitimage">
+                        <img className="github" src={odessey} alt="" />
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    className="neomorphism"
+                    ref={refNeo2}
+                    variants={sectionVariant}
+                    animate={inViewNeo2 ? "visible" : "hidden"}
+                >
                     <div id="gitimage">
                         <img src={decipher} alt="" />
                     </div>
@@ -220,9 +270,9 @@ const Home = () => {
 
                 <motion.div
                     className="neomorphism"
-                    ref={refNeo2}
+                    ref={refNeo3}
                     variants={sectionVariant}
-                    animate={inViewNeo2 ? "visible" : "hidden"}
+                    animate={inViewNeo3 ? "visible" : "hidden"}
                 >
                     <div className="text-white" style={{ width: "100%" }}>
                         <div id="gitimagedesktop">
@@ -266,99 +316,6 @@ const Home = () => {
                     </div>
                     <div id="gitimage">
                         <img className="github" src={github} alt="" />
-                    </div>
-                </motion.div>
-
-                {/* <motion.div
-                    className="neomorphism"
-                    ref={refNeo2}
-                    variants={sectionVariant}
-                    animate={inViewNeo2 ? "visible" : "hidden"}
-                >
-                    <div id="gitimage">
-                        <img src={decipher} alt="" />
-                    </div>
-                    <div id="gitimagedesktop">
-                        <img
-                            className="github"
-                            style={{ height: "auto" }}
-                            src={decipher}
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        style={{ lineHeight: "24px" }}
-                        className="text-3xl m-6"
-                    >
-                        <h1 className="font-semibold pb-4">{event3.title}</h1>
-                        <p>{event3.description}</p>
-                        <div className="display-flex icon-text py-2">
-                            <i className="ri-user-3-fill"></i>
-                            <p>Participation: {event3.participation}</p>
-                        </div>
-                        <div className="display-flex icon-text">
-                            <i className="ri-calendar-todo-fill"></i>
-                            <p>Date: {event3.date}</p>
-                        </div>
-
-                        <motion.button
-                            id="event2register"
-                            className="buy__button mt-40 mb-40 "
-                        >
-                            <a href={`${event3.link}`} className="text-[16px]">
-                                {event3.status}
-                            </a>
-                        </motion.button>
-                    </div>
-                </motion.div> */}
-
-                <motion.div
-                    className="neomorphism"
-                    ref={refNeo3}
-                    variants={sectionVariant}
-                    animate={inViewNeo3 ? "visible" : "hidden"}
-                >
-                    <div className="text-white" style={{ width: "100%" }}>
-                        <div id="gitimagedesktop">
-                            <img
-                                className="github"
-                                style={{ height: "auto" }}
-                                src={odessey}
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            className="text-3xl m-6 "
-                            style={{ lineHeight: "24px" }}
-                        >
-                            <h1 className="font-semibold pb-4">
-                                {event2.title}
-                            </h1>
-                            <p>{event2.description}</p>
-                            <div className="display-flex icon-text">
-                                <i className="ri-team-fill"></i>
-                                <p>Participation: {event2.participation}</p>
-                            </div>
-                            <div className="display-flex icon-text">
-                                <i className="ri-calendar-todo-fill"></i>
-                                <p>Date: {event2.date}</p>
-                            </div>
-                            <motion.button
-                                id="event1register"
-                                className="buy__button mt-40"
-                            >
-                                <a
-                                    href={`${event2.link}`}
-                                    style={{ lineHeight: "24px" }}
-                                    className="text-[16px]"
-                                >
-                                    {event2.status}
-                                </a>
-                            </motion.button>
-                        </div>
-                    </div>
-                    <div id="gitimage">
-                        <img className="github" src={odessey} alt="" />
                     </div>
                 </motion.div>
             </motion.section>
