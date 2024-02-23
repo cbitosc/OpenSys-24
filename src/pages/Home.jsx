@@ -185,7 +185,7 @@ const Home = () => {
                             <img
                                 className="github"
                                 style={{ height: "auto" }}
-                                src={odessey}
+                                src={github}
                                 alt=""
                             />
                         </div>
@@ -194,35 +194,38 @@ const Home = () => {
                             style={{ lineHeight: "24px" }}
                         >
                             <h1 className="font-semibold pb-4">
-                                {event2.title}
+                                {event1.title}
                             </h1>
-                            <p>{event2.description}</p>
+                            <p>{event1.description}</p>
                             <div className="display-flex icon-text">
                                 <i className="ri-team-fill"></i>
-                                <p>Participation: {event2.participation}</p>
+                                <p>Participation: {event1.participation}</p>
                             </div>
                             <div className="display-flex icon-text">
                                 <i className="ri-calendar-todo-fill"></i>
-                                <p>Date: {event2.date}</p>
+                                <p>Date: {event1.date}</p>
                             </div>
                             <motion.button
                                 id="event1register"
                                 className="buy__button mt-40"
                             >
                                 <a
-                                    href={`${event2.link}`}
+                                    href={`${event1.link}`}
+                                    target="_blank"
                                     style={{ lineHeight: "24px" }}
                                     className="text-[16px]"
                                 >
-                                    {event2.status}
+                                    {event1.status}
                                 </a>
                             </motion.button>
                         </div>
                     </div>
                     <div id="gitimage">
-                        <img className="github" src={odessey} alt="" />
+                        <img className="github" src={github} alt="" />
                     </div>
                 </motion.div>
+
+                
 
                 <motion.div
                     className="neomorphism"
@@ -267,7 +270,6 @@ const Home = () => {
                     </div>
                 </motion.div>
 
-
                 <motion.div
                     className="neomorphism"
                     ref={refNeo3}
@@ -279,7 +281,7 @@ const Home = () => {
                             <img
                                 className="github"
                                 style={{ height: "auto" }}
-                                src={github}
+                                src={odessey}
                                 alt=""
                             />
                         </div>
@@ -288,36 +290,36 @@ const Home = () => {
                             style={{ lineHeight: "24px" }}
                         >
                             <h1 className="font-semibold pb-4">
-                                {event1.title}
+                                {event2.title}
                             </h1>
-                            <p>{event1.description}</p>
+                            <p>{event2.description}</p>
                             <div className="display-flex icon-text">
                                 <i className="ri-team-fill"></i>
-                                <p>Participation: {event1.participation}</p>
+                                <p>Participation: {event2.participation}</p>
                             </div>
                             <div className="display-flex icon-text">
                                 <i className="ri-calendar-todo-fill"></i>
-                                <p>Date: {event1.date}</p>
+                                <p>Date: {event2.date}</p>
                             </div>
                             <motion.button
                                 id="event1register"
                                 className="buy__button mt-40"
                             >
                                 <a
-                                    href={`${event1.link}`}
-                                    target="_blank"
+                                    href={`${event2.link}`}
                                     style={{ lineHeight: "24px" }}
                                     className="text-[16px]"
                                 >
-                                    {event1.status}
+                                    {event2.status}
                                 </a>
                             </motion.button>
                         </div>
                     </div>
                     <div id="gitimage">
-                        <img className="github" src={github} alt="" />
+                        <img className="github" src={odessey} alt="" />
                     </div>
                 </motion.div>
+               
             </motion.section>
 
             <motion.section
